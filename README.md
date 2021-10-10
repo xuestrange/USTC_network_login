@@ -12,17 +12,14 @@ pip install requests
 
 ## 开机自动启动
 ### linux系统
-然后通过命令行赋予这两个文件的可执行权限
+然后通过命令行赋予这个文件的可执行权限
 ```shell
 # cd 该文件所在文件夹
 sudo chmod +x ./ustc_login.py
-sudo chmod +x ./start.sh
 ```
-编辑/etc/profile文件, 在最后添加
-```shell
-/home/xue/Documents/sh/ustc_login/start.sh
+``` shell
+sudo vim etc/rc.local
 ```
-重启
-
+把执行py脚本的命令插入进去,保存
 ### windows系统
 TODO
